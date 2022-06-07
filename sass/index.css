@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-wrap {
+  max-width: 1148px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body, html, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #403E3B;
+}
+
+li,
+ul,
+a {
+  list-style: none;
+  text-decoration: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-logo {
+  margin-top: 36px;
+  margin-bottom: 35px;
+}
+
+.header-menu--items {
+  margin-right: 12px;
+  cursor: pointer;
+  padding: 11px 20px;
+  border-radius: 14px;
+}
+
+.header-menu--items:hover {
+  background-color: #1B1A1A;
+  color: #FFFFFF;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
