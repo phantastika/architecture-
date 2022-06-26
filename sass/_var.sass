@@ -1,5 +1,21 @@
 $color-black: #1B1A1A
 $txt-white: #FFFFFF
+$color-bgj: #ECE7E4
+$color-white: #ffffff
+$color-broun: #645C55
+
+@mixin cover
+    background-size: cover
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: right
+
+.header
+    background-color: #ffffff
+    width: 100%
+    position: fixed
+    z-index: 5
 
 .header-logo
     margin-top: 36px
@@ -17,3 +33,134 @@ $txt-white: #FFFFFF
             color: $txt-white
             transition-timing-function: linear
             transition-duration: 0.2s
+.container
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+
+.section
+    &--left
+        background-color: $color-bgj
+        width: 50%
+        object-fit: cover
+    &--right
+        width: 50%
+        object-fit: cover
+.img_beautiful_home
+    height: 100%
+    width: 100%
+
+.txt
+    &--block
+        margin-left: 100px
+    &--company
+        margin-top: 137px
+
+        font-size: 14px
+    &--h1
+        margin-top: 20px
+
+        font-size: 64px
+        line-height: 70px
+    &--text
+        width: 70%
+        margin-top: 18px
+        font-size: 16px
+        line-height: 24px
+    &--paragraph
+        margin-bottom: 10px
+
+.link-more
+    margin-top: 41px
+    margin-left: 25px
+    text-decoration: none
+.link-text
+    color: $color-black
+    font-size: 16px
+
+.container-white
+    width: 53%
+    height: 582px
+    margin: 0 auto
+    margin-top: 100px
+    margin-bottom: 128px
+    justify-content: space-between
+    align-items: start
+    &--right
+        width: 64%
+.team-wrap
+    display: flex
+    margin-top: 18px
+
+.team
+    &--details
+        margin-left: 30px
+    &--name
+        font-size: 17px
+    &--postion
+        font-size: 14px
+        color: $color-broun
+.img-bgs
+    background: url('../Assets/images/reeding_house.png') no-repeat
+    @include cover
+
+    &--stairs
+        background: url('../Assets/images/marble_staircase.png') no-repeat
+        @include cover
+
+.txt-wrap
+    width: 19%
+    margin: 0 95px
+    color: $color-broun
+    align-items: center
+.subtitle
+    margin: 100px 0 0 0
+    text-align-last: center
+.wrap
+    width: 83%
+    margin: 0 auto
+
+.benefits
+    display: flex
+    justify-content: space-between
+    text-align: center
+    flex-wrap: wrap
+    margin-top: 47px
+    margin-bottom: 100px
+.benefit
+    width: 22%
+.benefit-sign
+    font-size: 18px
+    margin-top: 15px
+    margin-bottom: 10px
+.benefit-txt
+    font-size: 15px
+.wrap-customers
+    padding: 60px 135px
+    display: flex
+    justify-content: space-between
+.bgs-customers
+    width: 100%
+    background: url('../Assets/images/backgorund_customers.png') no-repeat
+    background-size: cover
+.txt-wrap-customers
+    width: 35%
+.txt-white
+    color: $txt-white
+.position-customer
+    margin-bottom: 14px
+
+.logo-customers
+    display: flex
+    flex-wrap: wrap
+    height: 290px
+    width: 24%
+    justify-content: space-between
+    margin-right: 320px
+    align-items: baseline
+
+.logo-customer
+    width: 36%
+    display: flex
+    align-items: center
+    justify-content: center
